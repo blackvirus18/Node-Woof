@@ -23,4 +23,3 @@ woofObject.publishTopic('test7',{key:'key',value:'value'},{},function(err,data){
 var Woof = require('../woof/woof');
 var woofObject=new Woof("localhost:2181");
 woofObject.registerOffsetConsumer('test7',{fromOffset:true},console.log);
-time.sleep(60) // This is just to avoid the process exiting
